@@ -10,11 +10,12 @@ CORS(app)
 def generate_tags():
     # Parse the incoming JSON data
     data = request.get_json()
-    names_raw = data['names'] if 'names' in data else []
-    names = [name.strip() for name in names_raw if name.strip()]
+    names = [name.strip() for name in (data.get('names', [])) if name.strip()]
 
     # Generate the SCAD file
-    scad_code: str = render_template('tags.scad', names=names)
+    scad_code: str = render_template('tags.scad', names=names,
+                                     dims=[50, 15, 1], num_rows=12, num_cols=3)
+    print(scad_code)
     with open('/tmp/tags.scad', 'w') as f:
         f.write(scad_code)
 
