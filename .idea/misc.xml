@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownProjectSettings">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="false" showSelectionInPreview="true" openRemoteLinks="true">
+      <PanelProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.panel" providerName="Default - Swing" />
+      </PanelProvider>
+    </PreviewSettings>
+    <ParserSettings gitHubSyntaxChange="false">
+      <PegdownExtensions>
+        <option name="ABBREVIATIONS" value="false" />
+        <option name="ANCHORLINKS" value="true" />
+        <option name="ASIDE" value="false" />
+        <option name="ATXHEADERSPACE" value="true" />
+        <option name="AUTOLINKS" value="true" />
+        <option name="DEFINITIONS" value="false" />
+        <option name="DEFINITION_BREAK_DOUBLE_BLANK_LINE" value="false" />
+        <option name="FENCED_CODE_BLOCKS" value="true" />
+        <option name="FOOTNOTES" value="false" />
+        <option name="HARDWRAPS" value="false" />
+        <option name="HTML_DEEP_PARSER" value="false" />
+        <option name="INSERTED" value="false" />
+        <option name="QUOTES" value="false" />
+        <option name="RELAXEDHRULES" value="true" />
+        <option name="SMARTS" value="false" />
+        <option name="STRIKETHROUGH" value="true" />
+        <option name="SUBSCRIPT" value="false" />
+        <option name="SUPERSCRIPT" value="false" />
+        <option name="SUPPRESS_HTML_BLOCKS" value="false" />
+        <option name="SUPPRESS_INLINE_HTML" value="false" />
+        <option name="TABLES" value="true" />
+        <option name="TASKLISTITEMS" value="true" />
+        <option name="TOC" value="false" />
+        <option name="WIKILINKS" value="true" />
+      </PegdownExtensions>
+      <ParserOptions>
+        <option name="COMMONMARK_LISTS" value="true" />
+        <option name="DUMMY" value="false" />
+        <option name="EMOJI_SHORTCUTS" value="true" />
+        <option name="FLEXMARK_FRONT_MATTER" value="false" />
+        <option name="GFM_LOOSE_BLANK_LINE_AFTER_ITEM_PARA" value="false" />
+        <option name="GFM_TABLE_RENDERING" value="true" />
+        <option name="GITBOOK_URL_ENCODING" value="false" />
+        <option name="GITHUB_EMOJI_URL" value="false" />
+        <option name="GITHUB_LISTS" value="false" />
+        <option name="GITHUB_WIKI_LINKS" value="true" />
+        <option name="JEKYLL_FRONT_MATTER" value="false" />
+        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
+      </ParserOptions>
+    </ParserSettings>
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false">
+      <GeneratorProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.generator" providerName="Default Swing HTML Generator" />
+      </GeneratorProvider>
+      <headerTop />
+      <headerBottom />
+      <bodyTop />
+      <bodyBottom />
+    </HtmlSettings>
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssTextEnabled="false" isDynamicPageWidth="true">
+      <StylesheetProvider>
+        <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
+      </StylesheetProvider>
+      <ScriptProviders />
+      <cssText />
+    </CssSettings>
+    <HtmlExportSettings updateOnSave="false" parentDir="$ProjectFileDir$" targetDir="$ProjectFileDir$" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetExt="" useTargetExt="false" noCssNoScripts="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <LinkMapSettings>
+      <textMaps />
+    </LinkMapSettings>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/cibo/continuum" value="1476648746000" />
+        <entry key="$USER_HOME$/cibo/continuum-extra" value="1479509765000" />
+        <entry key="$USER_HOME$/cibo/continuum-master" value="1476740475000" />
+        <entry key="$USER_HOME$/cibo/continuum-services" value="1477257532000" />
+        <entry key="$USER_HOME$/cibo/manifold" value="1477254334000" />
+        <entry key="$USER_HOME$/cibo/salus-one" value="5903139196000" />
+        <entry key="$PROJECT_DIR$/../akka-in-action/chapter-up-and-running" value="1429911808000" />
+        <entry key="$PROJECT_DIR$/../akka-in-action/chapter2" value="1429914745000" />
+        <entry key="$PROJECT_DIR$/../class-periods" value="2868344404000" />
+        <entry key="$PROJECT_DIR$/../dbschools/music-gradebook" value="1430179506000" />
+        <entry key="$PROJECT_DIR$/../dbschools/period-clock-server" value="1440948657000" />
+        <entry key="$PROJECT_DIR$/../hello-slick-3.0" value="1440952134000" />
+        <entry key="$PROJECT_DIR$/../lift-3-demo" value="1428695912000" />
+        <entry key="$PROJECT_DIR$/../lift/framework" value="1429046327000" />
+        <entry key="$PROJECT_DIR$/../paths-scala-js" value="2868516938000" />
+        <entry key="$PROJECT_DIR$/../paths-scala-js-demo" value="2868513108000" />
+        <entry key="$PROJECT_DIR$/../reactive-instruments-workshop" value="1437408329000" />
+        <entry key="$PROJECT_DIR$/../scala-js-dom" value="2868518398000" />
+        <entry key="$PROJECT_DIR$/../scala-js-progress-bar-app" value="2868323236000" />
+        <entry key="$PROJECT_DIR$/../scala-lessons/reader" value="2868417459000" />
+        <entry key="$PROJECT_DIR$/../shapeless" value="1429126625000" />
+        <entry key="$PROJECT_DIR$/../spray" value="1440947346000" />
+        <entry key="$PROJECT_DIR$/../spray-template" value="1440947678000" />
+        <entry key="$PROJECT_DIR$/../threejs-facade" value="1481836487000" />
+        <entry key="$PROJECT_DIR$/../threejs-scalajs-example" value="1481839191000" />
+        <entry key="/tmp/lift-lift_26_sbt-d71cccf/scala_211/lift_basic" value="1426990067000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customVMPath" />
+  </component>
+</project>
