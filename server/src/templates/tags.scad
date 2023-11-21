@@ -1,7 +1,5 @@
 // Define constants for dimensions and settings
 dims = [{{ dims[0] }}, {{ dims[1] }}, {{ dims[2] }}];
-num_rows = {{ num_rows }};
-num_cols = {{ num_cols }};
 text_extrude_height = 0.8;
 text_size = dims[1] * 0.55;
 text_offset = [dims[0] / 2, dims[1] / 2, dims[2] - text_extrude_height];

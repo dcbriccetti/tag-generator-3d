@@ -11,11 +11,17 @@ CORS(app)
 def generate_tags():
     # Parse the incoming JSON data
     data = request.get_json()
-    names: list[str] = [name.strip() for name in (data.get('names', [])) if name.strip()]
+    body = data.get('body')
+    if not body or not all(item in body for item in 'names tagDims bedWidth'.split()):
+        return 'Invalid input', 400
+
+    print(data)
+    names: list[str] = [name.strip() for name in body['names'] if name.strip()]
+    dims: list[int] = body['tagDims']
 
     # Generate the SCAD file
-    scad_code: str = render_template('tags.scad', names=names,
-                                     dims=[60, 15, 1], num_rows=12, num_cols=3)
+    num_cols: int = body['bedWidth'] // dims[0]
+    scad_code: str = render_template('tags.scad', names=names, dims=dims, num_cols=num_cols)
     with open('/tmp/tags.scad', 'w') as f:
         f.write(scad_code)
 
@@ -29,4 +35,4 @@ def generate_tags():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
