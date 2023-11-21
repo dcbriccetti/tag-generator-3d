@@ -1,5 +1,16 @@
 import {useState} from 'react';
-import {Box, Button, CircularProgress, Stack, TextField, Typography} from '@mui/material';
+import {
+    Accordion,
+    AccordionDetails,
+    AccordionSummary,
+    Box,
+    Button,
+    CircularProgress,
+    Stack,
+    TextField,
+    Typography
+} from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './App.css';
 import SliderComponent from "./components/SliderComponent";
 
@@ -7,8 +18,8 @@ function App() {
     const [names, setNames] = useState<string[]>([]);
     const [isGenerating, setIsGenerating] = useState(false);
     const [bedWidth, setBedWidth] = useState(220);
-    const [tagXLength, setTagXLength] = useState(50);
-    const [tagYLength, setTagYLength] = useState(15);
+    const [tagXLength, setTagXLength] = useState(72);
+    const [tagYLength, setTagYLength] = useState(10);
     const [tagZLength, setTagZLength] = useState(1);
 
     const handleGenerate = async () => {
@@ -52,42 +63,49 @@ function App() {
                 <TextField
                     label="Names"
                     multiline
-                    rows={4}
+                    rows={8}
                     value={names.join('\n')}
                     onChange={(event) => setNames(event.target.value.split('\n'))}
                     variant="outlined"
                     fullWidth
                     sx={{textarea: {resize: 'both'}}}
                 />
-                <SliderComponent
-                    label="Bed Width"
-                    value={bedWidth}
-                    min={50}
-                    max={500}
-                    onChange={setBedWidth}
-                />
-                <SliderComponent
-                    label="Tag X Length"
-                    value={tagXLength}
-                    min={1}
-                    max={bedWidth}
-                    onChange={setTagXLength}
-                />
-                <SliderComponent
-                    label="Tag Y Length"
-                    value={tagYLength}
-                    min={1}
-                    max={50}
-                    onChange={setTagYLength}
-                />
-                <SliderComponent
-                    label="Tag Z Length"
-                    value={tagZLength}
-                    min={0.1}
-                    max={5}
-                    step={0.1}
-                    onChange={(newValue) => setTagZLength(newValue)}
-                />
+                <Accordion>
+                    <AccordionSummary expandIcon={<ExpandMoreIcon/>}>
+                        <Typography variant="h6">Settings</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <SliderComponent
+                            label="Bed Width"
+                            value={bedWidth}
+                            min={50}
+                            max={500}
+                            onChange={setBedWidth}
+                        />
+                        <SliderComponent
+                            label="Tag X Length"
+                            value={tagXLength}
+                            min={1}
+                            max={bedWidth}
+                            onChange={setTagXLength}
+                        />
+                        <SliderComponent
+                            label="Tag Y Length"
+                            value={tagYLength}
+                            min={1}
+                            max={50}
+                            onChange={setTagYLength}
+                        />
+                        <SliderComponent
+                            label="Tag Z Length"
+                            value={tagZLength}
+                            min={0.1}
+                            max={5}
+                            step={0.1}
+                            onChange={(newValue) => setTagZLength(newValue)}
+                        />
+                    </AccordionDetails>
+                </Accordion>
                 <Button id="generate" variant="contained" disabled={isGenerating}
                         onClick={handleGenerate} sx={{width: 'auto'}}>
                     Generate
