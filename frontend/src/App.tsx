@@ -88,7 +88,7 @@ function App() {
                     step={0.1}
                     onChange={(newValue) => setTagZLength(newValue)}
                 />
-                <Button id="generate" variant="contained"
+                <Button id="generate" variant="contained" disabled={isGenerating}
                         onClick={handleGenerate} sx={{width: 'auto'}}>
                     Generate
                 </Button>
