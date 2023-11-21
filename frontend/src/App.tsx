@@ -15,7 +15,7 @@ import './App.css';
 import SliderComponent from "./components/SliderComponent";
 
 function App() {
-    const [names, setNames] = useState<string[]>([]);
+    const [names, setNames] = useState('');
     const [isGenerating, setIsGenerating] = useState(false);
     const [bedWidth, setBedWidth] = useState(220);
     const [tagXLength, setTagXLength] = useState(72);
@@ -25,7 +25,7 @@ function App() {
     const handleGenerate = async () => {
         setIsGenerating(true);
         const body = {
-            names,
+            names: names.split('\n'),
             bedWidth,
             tagDims: [tagXLength, tagYLength, tagZLength],
         }
@@ -64,8 +64,8 @@ function App() {
                     label="Names"
                     multiline
                     rows={8}
-                    value={names.join('\n')}
-                    onChange={(event) => setNames(event.target.value.split('\n'))}
+                    value={names}
+                    onChange={(event) => setNames(event.target.value)}
                     variant="outlined"
                     fullWidth
                     sx={{textarea: {resize: 'both'}}}
@@ -106,8 +106,9 @@ function App() {
                         />
                     </AccordionDetails>
                 </Accordion>
-                <Button id="generate" variant="contained" disabled={isGenerating}
-                        onClick={handleGenerate} sx={{width: 'auto'}}>
+                <Button id="generate" variant="contained"
+                        disabled={isGenerating || names.trim() === ''}
+                        onClick={handleGenerate} sx={{width: 'fit-content'}}>
                     Generate
                 </Button>
 
