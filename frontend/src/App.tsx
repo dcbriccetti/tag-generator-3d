@@ -102,7 +102,7 @@ function App() {
                             min={0.1}
                             max={5}
                             step={0.1}
-                            onChange={(newValue) => setTagZLength(newValue)}
+                            onChange={setTagZLength}
                         />
                     </AccordionDetails>
                 </Accordion>
